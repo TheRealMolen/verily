@@ -3,6 +3,7 @@
 *.bld
 *.cmd_log
 *.drc
+*.exe
 *.ll
 *.lso
 *.msd
@@ -24,6 +25,7 @@
 *.twx
 *.unroutes
 *.ut
+*.wdb
 *.xpi
 *.xst
 *_bitgen.xwbt
@@ -68,6 +70,4 @@ _ngo/
 _xmsgs/
 
 # isim intermediates - hopefully i don't regret this
-isim
-*.wdb
-*.exe
+isim/
