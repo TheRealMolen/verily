@@ -41,7 +41,7 @@
 *_usage.xml
 *_xst.xrpt
 
-/*.log
+*.log
 
 # iMPACT generated files
 _impactbatch.log
@@ -69,3 +69,5 @@ _xmsgs/
 
 # isim intermediates - hopefully i don't regret this
 isim
+*.wdb
+*.exe
