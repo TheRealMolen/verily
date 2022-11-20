@@ -43,8 +43,6 @@
 *_usage.xml
 *_xst.xrpt
 
-*.log
-
 # iMPACT generated files
 _impactbatch.log
 impact.xsl
@@ -54,6 +52,9 @@ webtalk_impact.xml
 
 # Core Generator generated files
 xaw2verilog.log
+
+fuse.log
+isim.log
 
 # project-wide generated files
 *.gise
