@@ -41,6 +41,8 @@
 *_usage.xml
 *_xst.xrpt
 
+/*.log
+
 # iMPACT generated files
 _impactbatch.log
 impact.xsl
@@ -64,3 +66,6 @@ xlnx_auto_0_xdb/
 xst/
 _ngo/
 _xmsgs/
+
+# isim intermediates - hopefully i don't regret this
+isim
