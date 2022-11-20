@@ -11,6 +11,9 @@ useful links:
 
 setup notes:
 * xilinx ise is a redhat enterprise VM that installs into virtualbox
+    * NOTE: virtualbox doesn't work on Win10 if Hyper-V / WSL2 are enabled
+    * check those things are off in "Turn Windows Features On or Off"
+    * might also need `bcdedit / set hypervisorlaunchtype off` from an admin cmd.exe
 * i couldn't get the papilio loader to work within that VM, so i had to disable the three Xilinx USB Cable options within the VM USB device options and then use it from windows
 
 flash to SPI -- writing to FPGA didn't seem to work

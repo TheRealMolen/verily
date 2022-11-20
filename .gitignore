@@ -43,6 +43,12 @@
 *_usage.xml
 *_xst.xrpt
 
+planAhead*
+pa.fromNcd.tcl
+
+.Xil/
+ipcore_dir/
+
 # iMPACT generated files
 _impactbatch.log
 impact.xsl
@@ -52,9 +58,9 @@ webtalk_impact.xml
 
 # Core Generator generated files
 xaw2verilog.log
-
 fuse.log
 isim.log
+*_editor.log
 
 # project-wide generated files
 *.gise
