@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/ise/git/verily/verily_test_isim_beh.exe" -prj "/home/ise/git/verily/verily_test_beh.prj" "work.verily_test" "work.glbl" 
