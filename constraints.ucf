@@ -1,35 +1,36 @@
-NET CLK  LOC="P89"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
-#NET JOY_SELECT   LOC="P22"  | IOSTANDARD=LVTTL;                                # B15
+NET I_CLK  LOC="P89"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
+#NET I_JOY_SELECT   LOC="P22"  | IOSTANDARD=LVTTL;                                # B15
 
 # NOTE: reverse order from the printed board
-NET SWITCH(7)    LOC="P91"  | IOSTANDARD=LVTTL;                                # C0
-NET SWITCH(6)    LOC="P92"  | IOSTANDARD=LVTTL;                                # C1
-NET SWITCH(5)    LOC="P94"  | IOSTANDARD=LVTTL;                                # C2
-NET SWITCH(4)    LOC="P95"  | IOSTANDARD=LVTTL;                                # C3
-NET SWITCH(3)    LOC="P98"  | IOSTANDARD=LVTTL;                                # C4
-NET SWITCH(2)    LOC="P2"   | IOSTANDARD=LVTTL;                                # C5
-NET SWITCH(1)    LOC="P3"   | IOSTANDARD=LVTTL;                                # C6
-NET SWITCH(0)    LOC="P4"   | IOSTANDARD=LVTTL;                                # C7
-#NET LED(0)       LOC="P5"   | IOSTANDARD=LVTTL;                                # C8
-#NET LED(1)       LOC="P9"   | IOSTANDARD=LVTTL;                                # C9
-#NET LED(2)       LOC="P10"  | IOSTANDARD=LVTTL;                                # C10
-#NET LED(3)       LOC="P11"  | IOSTANDARD=LVTTL;                                # C11
-#NET LED(4)       LOC="P12"  | IOSTANDARD=LVTTL;                                # C12
-#NET LED(5)       LOC="P15"  | IOSTANDARD=LVTTL;                                # C13
-#NET LED(6)       LOC="P16"  | IOSTANDARD=LVTTL;                                # C14
-#NET LED(7)       LOC="P17"  | IOSTANDARD=LVTTL;                                # C15
+NET I_SWITCH(7)    LOC="P91"  | IOSTANDARD=LVTTL;                                # C0
+NET I_SWITCH(6)    LOC="P92"  | IOSTANDARD=LVTTL;                                # C1
+NET I_SWITCH(5)    LOC="P94"  | IOSTANDARD=LVTTL;                                # C2
+NET I_SWITCH(4)    LOC="P95"  | IOSTANDARD=LVTTL;                                # C3
+NET I_SWITCH(3)    LOC="P98"  | IOSTANDARD=LVTTL;                                # C4
+NET I_SWITCH(2)    LOC="P2"   | IOSTANDARD=LVTTL;                                # C5
+NET I_SWITCH(1)    LOC="P3"   | IOSTANDARD=LVTTL;                                # C6
+NET I_SWITCH(0)    LOC="P4"   | IOSTANDARD=LVTTL;                                # C7
+# NOTE: reverse order from the printed board
+NET O_LED(7)       LOC="P5"   | IOSTANDARD=LVTTL;                                # C8
+NET O_LED(6)       LOC="P9"   | IOSTANDARD=LVTTL;                                # C9
+NET O_LED(5)       LOC="P10"  | IOSTANDARD=LVTTL;                                # C10
+NET O_LED(4)       LOC="P11"  | IOSTANDARD=LVTTL;                                # C11
+NET O_LED(3)       LOC="P12"  | IOSTANDARD=LVTTL;                                # C12
+NET O_LED(2)       LOC="P15"  | IOSTANDARD=LVTTL;                                # C13
+NET O_LED(1)       LOC="P16"  | IOSTANDARD=LVTTL;                                # C14
+NET O_LED(0)       LOC="P17"  | IOSTANDARD=LVTTL;                                # C15
 
 // seven segment - select for each digit (active low)
-NET Seg7_NSel(3) LOC="P18"  | IOSTANDARD=LVTTL;                                # A0
-NET Seg7_NSel(2) LOC="P26"  | IOSTANDARD=LVTTL;                                # A2
-NET Seg7_NSel(1) LOC="P60"  | IOSTANDARD=LVTTL;                                # A8
-NET Seg7_NSel(0) LOC="P67"  | IOSTANDARD=LVTTL;                                # A11
+NET O_Seg7_NSel(3) LOC="P18"  | IOSTANDARD=LVTTL;                                # A0
+NET O_Seg7_NSel(2) LOC="P26"  | IOSTANDARD=LVTTL;                                # A2
+NET O_Seg7_NSel(1) LOC="P60"  | IOSTANDARD=LVTTL;                                # A8
+NET O_Seg7_NSel(0) LOC="P67"  | IOSTANDARD=LVTTL;                                # A11
 // segments a-g are 0-7
-NET Seg7(0)      LOC="P57"  | IOSTANDARD=LVTTL;                                # A7
-NET Seg7(1)      LOC="P65"  | IOSTANDARD=LVTTL;                                # A10
-NET Seg7(2)      LOC="P40"  | IOSTANDARD=LVTTL;                                # A5
-NET Seg7(3)      LOC="P53"  | IOSTANDARD=LVTTL;                                # A6
-NET Seg7(4)      LOC="P33"  | IOSTANDARD=LVTTL;                                # A3
-NET Seg7(5)      LOC="P35"  | IOSTANDARD=LVTTL;                                # A4
-NET Seg7(6)      LOC="P62"  | IOSTANDARD=LVTTL;                                # A9
-#NET Seg7_DP      LOC="P23"  | IOSTANDARD=LVTTL;                                # A1
+NET O_Seg7(0)      LOC="P57"  | IOSTANDARD=LVTTL;                                # A7
+NET O_Seg7(1)      LOC="P65"  | IOSTANDARD=LVTTL;                                # A10
+NET O_Seg7(2)      LOC="P40"  | IOSTANDARD=LVTTL;                                # A5
+NET O_Seg7(3)      LOC="P53"  | IOSTANDARD=LVTTL;                                # A6
+NET O_Seg7(4)      LOC="P33"  | IOSTANDARD=LVTTL;                                # A3
+NET O_Seg7(5)      LOC="P35"  | IOSTANDARD=LVTTL;                                # A4
+NET O_Seg7(6)      LOC="P62"  | IOSTANDARD=LVTTL;                                # A9
+#NET O_Seg7_DP      LOC="P23"  | IOSTANDARD=LVTTL;                                # A1
