@@ -1,5 +1,7 @@
+# logicstart megawing mapping can be found here: https://www.fpgakey.com/tutorial/section626
+# also https://web.archive.org/web/20180609063056/http://www.papilio.cc/index.php?n=Papilio.LogicStartMegaWing
+
 NET I_CLK  LOC="P89"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
-#NET I_JOY_SELECT   LOC="P22"  | IOSTANDARD=LVTTL;                                # B15
 
 # NOTE: reverse order from the printed board
 NET I_SWITCH(7)    LOC="P91"  | IOSTANDARD=LVTTL;                                # C0
@@ -34,3 +36,18 @@ NET O_Seg7(4)      LOC="P33"  | IOSTANDARD=LVTTL;                               
 NET O_Seg7(5)      LOC="P35"  | IOSTANDARD=LVTTL;                                # A4
 NET O_Seg7(6)      LOC="P62"  | IOSTANDARD=LVTTL;                                # A9
 #NET O_Seg7_DP      LOC="P23"  | IOSTANDARD=LVTTL;                                # A1
+
+#NET O_AUDIO 			LOC="P41"  | IOSTANDARD=LVTTL;
+
+#NET I_JOY_CLICK 		LOC="P22" | PULLUP;
+#NET I_JOY_UP 			LOC="P25" | PULLUP;
+#NET I_JOY_DOWN		LOC="P32" | PULLUP;
+#NET I_JOY_LEFT		LOC="P34" | PULLUP;
+#NET I_JOY_RIGHT		LOC="P36" | PULLUP;
+
+# SPI ADC [ADC128S102]
+#NET O_ADC_CLK 		LOC="P86"  | IOSTANDARD=LVTTL;
+#NET O_ADC_MOSI 	LOC="P84"  | IOSTANDARD=LVTTL;
+#NET I_ADC_MISO 	LOC="P79"  | IOSTANDARD=LVTTL;
+#NET O_ADC_CS 		LOC="P70"  | IOSTANDARD=LVTTL;		# active LOW
+ 
